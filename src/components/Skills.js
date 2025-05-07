@@ -36,8 +36,8 @@ const Skills = ()=>{
                 viewport={{once:true}}
                 >My Skills</motion.h2>
                 
-                <div  className="mt-10 flex justify-center overflow-x-auto scrollbar-hide" style={{scrollBehavior:'smooth'}}>
-                    <div ref={scrollRef} className="flex space-x-4">
+                <div ref={scrollRef}  className="mt-10 flex justify-center overflow-x-auto scrollbar-hide" style={{scrollBehavior:'smooth'}}>
+                    <div className="flex space-x-4">
                     {[...skills,...skills].map((item,index)=>(
                         <motion.span key={index} className={`bg-primary dark:bg-primary-light text-white px-4 py-2 
                         rounded-full text-sm whitespace-nowrap ${index >= skills.length?'lg:hidden':'' } `} whileHover={{scale:1.1}}>
