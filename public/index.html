@@ -5,11 +5,25 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Portfolio of Viraj Shedge, a Software Engineer specializing in React, Python, Flask, and JavaScript.
+     Explore my projects and download my resume." />
+     <meta name="keywords" content="Viraj Shedge, Software Engineer, React Developer, Python, Flask, JavaScript, Portfolio, Resume" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
+    <meta name="author" content="Viraj Shedge" />
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Viraj Shedge - Software Engineer Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Viraj Shedge, featuring projects in React, Python, and Flask. Download my resume to learn more." />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="https://gokuzz.vercel.app" />
+    <meta property="og:type" content="website" />
+     <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Viraj Shedge - Software Engineer Portfolio" />
+  <meta name="twitter:description" content="Explore the portfolio of Viraj Shedge, featuring projects in React, Python, and Flask. Download my resume to learn more." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -29,6 +43,24 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Viraj Shedge",
+        "jobTitle": "Software Engineer",
+        "url": "https://gokuzz.vercel.app",
+        "sameAs": [
+          "https://www.linkedin.com/in/viraj-shedge/",
+          "https://github.com/gokuzz"
+        ],
+        "description": "Software Engineer with 2.5 years of experience in React, Python, Flask, and JavaScript. Skilled in building responsive web applications and full-stack solutions.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance / Available for Opportunities"
+        }
+      }
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
