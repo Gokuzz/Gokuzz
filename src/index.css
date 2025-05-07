@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+html{
+    @apply scroll-smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+    @apply bg-gray-100 text-gray-900 transition-colors duration-300;
+}
+
+.dark-body{
+    @apply bg-gray-100 text-gray-900
+}
+
+.hero-bg{
+
+    background: linear-gradient(135deg,#1d4ed8 0%,#3b82f6 100%);
+    @apply relative overflow-hidden
+}
+
+
+/* .hero-bg::before{
+    content: '';
+    @apply absolute inset-0 bg-[url('https://source.unsplash.com/random/1920x1080?tech')] bg-cover bg-center
+    opacity-20 transform scale-110;
+    animation: parallax 20s linear infinite
+} */
+
+@keyframes parallex{
+    0% {transform: scale(1.1) translateY(0);}
+    100% {transform: scale(1.1) translateY(-100px);}
+}
+
+
+.shadow-text{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
