@@ -15,7 +15,7 @@ const NavBar = ({isDarkMode,setIsDarkMode}) =>{
                     <motion.span initial={{opacity:0,x:-20}} animate={{opacity:1,x:0}} transition={{duration:0.5}} className="text-2xl font-bold text-primary dark:text-primary-light">VIRAJ SHEDGE</motion.span>
                 </div>
                 <div className="hidden md:flex items-center space-x-4">
-                    <motion.a href="#hero" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-colors" whileHover={{scale:1.1}}>Home</motion.a>
+                    <motion.a href="#home" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-colors" whileHover={{scale:1.1}}>Home</motion.a>
                     <motion.a href="#about" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-colors" whileHover={{scale:1.1}}>About</ motion.a>
                     <motion.a href="#projects" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-colors" whileHover={{scale:1.1}}>Project</motion.a>
                     <motion.a href="#skills" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-colors" whileHover={{scale:1.1}} >Skills</motion.a>
@@ -39,7 +39,7 @@ const NavBar = ({isDarkMode,setIsDarkMode}) =>{
             {open && (
                 <motion.div className="md:hidden overflow:hidden" initial={{height:0}} animate={{height:'auto'}} transition={{duration:0.1}} >
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="#hero" className="block text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light">Home</a>
+                        <a href="#home" className="block text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light">Home</a>
                         <a href="#about" className="block text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light">About</a>
                         <a href="#projects" className="block text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light">Project</a>
                         <a href="#skills" className="block text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light">Skills</a>

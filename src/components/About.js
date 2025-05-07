@@ -19,9 +19,9 @@ const About = ()=>{
                 viewport={{once:true}}
                 >
                 I'm a motivated Full Stack Developer with hands-on experience in building web applications using React.js for the 
-                frontend and Python (Flask) for the backend. I enjoy crafting clean, user-friendly interfaces and developing efficient
+                frontend and Python for the backend. I enjoy crafting clean, user-friendly interfaces and developing efficient
                  APIs. I also have a working knowledge of Docker, which helps me manage and deploy applications in a consistent and scalable way.
-                  I'm passionate about learning new technologies and continuously improving my development workflow.
+                 I'm passionate about learning new technologies and continuously improving my development workflow.
                 </motion.p>
             </div>
         </section>
